@@ -60,4 +60,9 @@ public class Persona {
         this.altura=altura;
         System.out.println("La altura es "+altura+" "+unidades);
     }
+
+
+    public String toString(){
+        return this.nombre +" "+this.apellidos;
+    }
 }
