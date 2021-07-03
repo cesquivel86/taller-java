@@ -49,7 +49,7 @@ public class DeclaracionDeArreglos {
         for(String palabra: palabras) {
             System.out.println(palabra +" tiene "+ palabra.length()+ " letras");
         }
-
+/*
         Persona persona1 =  new Persona("Sergio", "Pat");
         Persona persona2 =  new Persona("Fulgencio", "Figueroa");
         personas.add(persona2);
@@ -72,7 +72,13 @@ public class DeclaracionDeArreglos {
         for(Persona p: personas){
             System.out.println(p);
         }
+        try{
+            System.out.println(personas.get(0));
+        }catch (IndexOutOfBoundsException e){
+            System.out.println("te estás pasando de lanza esa casilla no existe");
+        }
 
+*/
 
     }
 

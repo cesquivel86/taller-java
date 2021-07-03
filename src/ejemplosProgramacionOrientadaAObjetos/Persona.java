@@ -1,5 +1,7 @@
 package ejemplosProgramacionOrientadaAObjetos;
 
+import excepciones.MiPropiaExcepcion;
+
 //modificadores de acceso
 public class Persona {
     private String nombre;
@@ -18,9 +20,15 @@ public class Persona {
 
     }
 
-    public Persona (String nombre, String apellidos){
-        this.nombre=nombre;
+    public Persona (String nombre, String apellidos) throws MiPropiaExcepcion {
         this.apellidos=apellidos;
+        if(nombre.length()<3){
+            throw new MiPropiaExcepcion();
+        }else{
+            this.nombre=nombre;
+
+        }
+
     }
 
 
