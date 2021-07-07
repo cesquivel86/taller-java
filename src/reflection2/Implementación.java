@@ -22,13 +22,14 @@ public class Implementación {
         lamparas.add(l2);
         lamparas.add(l3);
 
+        computadoras.addAll(lamparas);
+
         Implementación.imprimirIdyDescripcionProductos(computadoras);
 
-        Implementación.imprimirIdyDescripcionProductos(lamparas);
     }
 
     public static void imprimirIdyDescripcionProductos(List<Producto> productos){
-        for(Producto p: productos) System.out.println(p.getId() + p.getDescripcion());
+        for(Producto p: productos) System.out.println(p.getId() +" "+ p.getDescripcion());
     }
 
 }

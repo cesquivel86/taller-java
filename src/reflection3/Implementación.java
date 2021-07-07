@@ -26,6 +26,10 @@ public class Implementación {
 
         Implementación.imprimirIdyDescripcionGeneral(computadoras);
         Implementación.imprimirIdyDescripcionGeneral(lamparas);
+
+        List<String> listaStrings = new ArrayList<String>();
+        listaStrings.add("Hola Mundo");
+        Implementación.imprimirIdyDescripcionGeneral(listaStrings);
     }
 
     public static void imprimirIdyDescripcionGeneral(List lista){
@@ -42,7 +46,7 @@ public class Implementación {
                     }
                 }
 
-                if ( m.getName().equals("getDescripcion")) {
+                else if ( m.getName().equals("getDescripcion")) {
                     try {
                         descripcion= (String) m.invoke(c, null);
                     } catch (IllegalAccessException | IllegalArgumentException | InvocationTargetException e) {

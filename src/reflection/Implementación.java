@@ -37,4 +37,13 @@ public class Implementación {
             System.out.println(c.getId()+ c.getDescripcion());
         }
     }
+
+    /*
+    public static void imprimirIdyDescripcion(List productos){
+        for(Object c: productos){
+            System.out.println(c.getId()+ c.getDescripcion());
+        }
+    }
+
+     */
 }
