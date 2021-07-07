@@ -4,6 +4,7 @@ public class Computadora {
     private String id;
     private String descripcion;
     private int ram;
+
     public String getId() {
         return id;
     }
@@ -22,10 +23,10 @@ public class Computadora {
     public void setRam(int ram) {
         this.ram = ram;
     }
-    public Computadora(String id, String descripcion, int potencia) {
+    public Computadora(String id, String descripcion, int ram) {
         super();
         this.id = id;
         this.descripcion = descripcion;
-        this.ram = potencia;
+        this.ram = ram;
     }
 }
